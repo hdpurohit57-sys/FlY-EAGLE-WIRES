@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Eagle Wires & Cables | Wholesale Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Intro Splash Screen -->
+    <div id="intro-screen">
+        <div class="intro-content">
+            <!-- AI Designed Built-in Logo -->
+            <svg class="intro-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="#ffffff"/>
+                <path d="M25 40 L50 25 L75 40 L50 55 Z" fill="#ff6600"/>
+                <path d="M30 42 L50 75 L70 42 L50 52 Z" fill="#b34700"/>
+                <text x="50" y="52" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">FE</text>
+            </svg>
+            <h2>FLY EAGLE WIRES</h2>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <!-- 2. Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">🦅 FLY EAGLE</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#items">Items</a></li>
+            <li><a href="#order-form">Place Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. Main Intro Banner -->
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h1>Fly Eagle Wires & Cables</h1>
+            <p>Premium Quality HRFR (Heat Resistant Flame Retardant) Wires. Apni shop ke liye quantity select karein aur niche automatic bill generate karein.</p>
+            <a href="#items" class="btn-primary">Select Items Below</a>
+        </div>
+        <div class="hero-image">
+            <!-- AI Designed Premium Banner Graphic -->
+            <svg class="banner-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff8000;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#b34700;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="250" rx="15" fill="url(#bgGrad)"/>
+                <circle cx="320" cy="60" r="80" fill="#ff9933" opacity="0.3"/>
+                <path d="M20 180 Q 100 120, 200 180 T 380 180" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.5" />
+                <path d="M20 200 Q 110 150, 200 200 T 380 200" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3" />
+                <text x="40" y="80" font-family="sans-serif" font-size="32" font-weight="bold" fill="#ffffff">FLY EAGLE</text>
+                <text x="40" y="115" font-family="sans-serif" font-size="16" fill="#ffe6cc" letter-spacing="2">PREMIUM CABLES</text>
+                <text x="40" y="220" font-family="sans-serif" font-size="12" fill="#ffffff" opacity="0.8">100% Pure Copper Conductor</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 4. Wholesale Items Section -->
+    <section id="items" class="products-section">
+        <h2>Select Items & Quantity</h2>
+        <p class="section-subtitle">*Wholesale Rule: Minimum 10 Coils per size*</p>
+
+        <div class="products-grid">
+            <!-- Item 1: 1 sqmm (Red Coil) -->
+            <div class="product-card">
+                <svg class="wire-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#ff3333" stroke-width="12"/>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#cc0000" stroke-width="6"/>
+                    <circle cx="50" cy="50" r="15" fill="#e65c00"/>
+                    <text x="50" y="54" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1.0mm</text>
+                </svg>
+                <h3>Fly Eagle 1.0 sqmm</h3>
+                <p class="specs">HRFR Copper - Red / House Wire</p>
+                <p class="price">Rate: ₹950 <span class="per-unit">/ Coil</span></p>
+                <label>Qty (Coils):</label>
+                <input type="number" class="qty-input" id="qty-1" value="0" min="0" oninput="calculateTotalBill()">
+            </div>
+
+            <!-- Item 2: 1.5 sqmm (Yellow Coil) -->
+            <div class="product-card">
+                <svg class="wire-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#ffcc00" stroke-width="12"/>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#e6b800" stroke-width="6"/>
+                    <circle cx="50" cy="50" r="15" fill="#e65c00"/>
+                    <text x="50" y="54" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1.5mm</text>
+                </svg>
+                <h3>Fly Eagle 1.5 sqmm</h3>
+                <p class="specs">HRFR Copper - Yellow / Power Wire</p>
+                <p class="price">Rate: ₹1,420 <span class="per-unit">/ Coil</span></p>
+                <label>Qty (Coils):</label>
+                <input type="number" class="qty-input" id="qty-15" value="0" min="0" oninput="calculateTotalBill()">
+            </div>
+
+            <!-- Item 3: 2.5 sqmm (Blue Coil) -->
+            <div class="product-card">
+                <svg class="wire-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#3399ff" stroke-width="12"/>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#0077e6" stroke-width="6"/>
+                    <circle cx="50" cy="50" r="15" fill="#e65c00"/>
+                    <text x="50" y="54" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2.5mm</text>
+                </svg>
+                <h3>Fly Eagle 2.5 sqmm</h3>
+                <p class="specs">HRFR Copper - Blue / AC & Geyser</p>
+                <p class="price">Rate: ₹2,250 <span class="per-unit">/ Coil</span></p>
+                <label>Qty (Coils):</label>
+                <input type="number" class="qty-input" id="qty-25" value="0" min="0" oninput="calculateTotalBill()">
+            </div>
+
+            <!-- Item 4: 4 sqmm (Green/Black Heavy Coil) -->
+            <div class="product-card">
+                <svg class="wire-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#33cc33" stroke-width="12"/>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#248f24" stroke-width="6"/>
+                    <circle cx="50" cy="50" r="15" fill="#e65c00"/>
+                    <text x="50" y="54" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4.0mm</text>
+                </svg>
+                <h3>Fly Eagle 4.0 sqmm</h3>
+                <p class="specs">HRFR Copper - Green / Main Line</p>
+                <p class="price">Rate: ₹3,400 <span class="per-unit">/ Coil</span></p>
+                <label>Qty (Coils):</label>
+                <input type="number" class="qty-input" id="qty-4" value="0" min="0" oninput="calculateTotalBill()">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Bill Summary & Shop Details Form -->
+    <section id="order-form" class="products-section form-section">
+        <h2>🛒 Order Summary & Shop Details</h2>
+        <p class="section-subtitle">Kripya apni dukan ki detail bharein</p>
+
+        <div class="form-container">
+            <div class="bill-box">
+                <h4>Estimated Bill:</h4>
+                <p id="bill-details">Koi item select nahi kiya.</p>
+                <h3>Total Amount: <span id="total-price">₹0</span></h3>
+            </div>
+
+            <div class="input-group">
+                <label>Your Name *</label>
+                <input type="text" id="cust-name" placeholder="please enter your name">
+            </div>
+            
+            <div class="input-group">
+                <label>Shop Name *</label>
+                <input type="text" id="shop-name" placeholder="e.g., Maruti Electricals">
+            </div>
+            
+            <div class="input-group">
+                <label>Full Address (Delivery ke liye) *</label>
+                <textarea id="shop-address" rows="3" placeholder="road, city, Pincode and State "></textarea>
+            </div>
+            
+            <button class="order-btn" onclick="sendFinalWhatsAppOrder()">🚀 Send Order to Fly Eagle</button>
+        </div>
+    </section>
+
+    <!-- 6. Footer Section -->
+    <footer>
+        <h3>Fly Eagle Brand</h3>
+        <p>Aapki suraksha, hamari pehchan.</p>
+        <p>📍 Wholesaler Network India | Support: +91 9016006508</p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const intro = document.getElementById('intro-screen');
+                intro.style.opacity = '0';
+                setTimeout(() => { intro.style.display = 'none'; }, 500);
+            }, 2000);
+        });
+
+        const rates = { size1: 950, size15: 1420, size25: 2250, size4: 3400 };
+
+        function calculateTotalBill() {
+            let q1 = parseInt(document.getElementById('qty-1').value) || 0;
+            let q15 = parseInt(document.getElementById('qty-15').value) || 0;
+            let q25 = parseInt(document.getElementById('qty-25').value) || 0;
+            let q4 = parseInt(document.getElementById('qty-4').value) || 0;
+
+            let total = (q1 * rates.size1) + (q15 * rates.size15) + (q25 * rates.size25) + (q4 * rates.size4);
+            
+            let billText = "";
+            if(q1 > 0) billText += `• 1.0 sqmm: ${q1} Coils (₹${q1 * rates.size1})<br>`;
+            if(q15 > 0) billText += `• 1.5 sqmm: ${q15} Coils (₹${q15 * rates.size15})<br>`;
+            if(q25 > 0) billText += `• 2.5 sqmm: ${q25} Coils (₹${q25 * rates.size25})<br>`;
+            if(q4 > 0) billText += `• 4.0 sqmm: ${q4} Coils (₹${q4 * rates.size4})<br>`;
+
+            if(billText === "") {
+                document.getElementById('bill-details').innerHTML = "Koi item select nahi kiya.";
+            } else {
+                document.getElementById('bill-details').innerHTML = billText;
+            }
+            
+            document.getElementById('total-price').innerText = "₹" + total.toLocaleString('en-IN');
+        }
+
+        function sendFinalWhatsAppOrder() {
+            var myNumber = "919016006508"; 
+            
+            var cName = document.getElementById('cust-name').value.trim();
+            var sName = document.getElementById('shop-name').value.trim();
+            var sAddress = document.getElementById('shop-address').value.trim();
+
+            let q1 = parseInt(document.getElementById('qty-1').value) || 0;
+            let q15 = parseInt(document.getElementById('qty-15').value) || 0;
+            let q25 = parseInt(document.getElementById('qty-25').value) || 0;
+            let q4 = parseInt(document.getElementById('qty-4').value) || 0;
+
+            if(q1===0 && q15===0 && q25===0 && q4===0) {
+                alert("Kripya order karne ke liye pehle wire ki quantity select karein!");
+                return;
+            }
+            if(!cName || !sName || !sAddress) {
+                alert("Kripya Name, Shop Name aur Address poora bharein!");
+                return;
+            }
+
+            if((q1 > 0 && q1 < 10) || (q15 > 0 && q15 < 10) || (q25 > 0 && q25 < 10) || (q4 > 0 && q4 < 10)) {
+                alert("Wholesale rule: Jo bhi size select karein, kam se kam 10 coils hona zaroori hai!");
+                return;
+            }
+
+            let totalBill = (q1 * rates.size1) + (q15 * rates.size15) + (q25 * rates.size25) + (q4 * rates.size4);
+
+            var message = "🦅 *NEW WHOLESALE ORDER - FLY EAGLE* 🦅\n\n" +
+                          "👤 *Customer:* " + cName + "\n" +
+                          "🏪 *Shop Name:* " + sName + "\n" +
+                          "📍 *Address:* " + sAddress + "\n\n" +
+                          "📦 *ORDER DETAILS:* \n";
+
+            if(q1 > 0) message += "• 1.0 sqmm: " + q1 + " Coils (₹" + (q1*rates.size1) + ")\n";
+            if(q15 > 0) message += "• 1.5 sqmm: " + q15 + " Coils (₹" + (q15*rates.size15) + ")\n";
+            if(q25 > 0) message += "• 2.5 sqmm: " + q25 + " Coils (₹" + (q25*rates.size25) + ")\n";
+            if(q4 > 0) message += "• 4.0 sqmm: " + q4 + " Coils (₹" + (q4*rates.size4) + ")\n";
+
+            message += "\n💰 *TOTAL ESTIMATED BILL:* ₹" + totalBill.toLocaleString('en-IN') + "\n\n" +
+                       "Please approve the order and send transport details.";
+
+            var whatsappUrl = "https://wa.me/" + myNumber + "?text=" + encodeURIComponent(message);
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>

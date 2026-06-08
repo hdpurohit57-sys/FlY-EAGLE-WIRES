@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* 1. Intro Splash Screen */
+#intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ff6600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.intro-content {
+    text-align: center;
+}
+
+.intro-logo-svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
+}
+
+.intro-content h2 {
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 2. Navigation Bar */
+.navbar {
+    background-color: #111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ff6600;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 3. Hero Header Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #262626 0%, #1a1a1a 100%);
+    text-align: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 28px;
+    color: #ff6600;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    color: #cccccc;
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.banner-svg {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    margin-top: 35px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+/* 4. Products Section & Wires Graphics */
+.products-section {
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+.products-section h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #ff9955;
+    font-size: 13px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+.products-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.wire-svg {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px;
+    display: block;
+    filter: drop-shadow(0px 6px 12px rgba(0,0,0,0.5));
+}
+
+.product-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.specs {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 22px;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.per-unit {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.qty-input {
+    width: 80px;
+    padding: 8px;
+    background-color: #333;
+    border: 1px solid #505050;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 5. Form & Checkout Section */
+.form-section {
+    background-color: #1a1a1a;
+    border-top: 2px solid #ff6600;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.bill-box {
+    border-bottom: 1px dashed #555;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.bill-box h4 { color: #ff6600; margin-bottom: 10px; }
+#bill-details { font-size: 14px; color: #bbb; line-height: 1.6; }
+#total-price { color: #25D366; font-size: 24px; }
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label { font-size: 14px; color: #ccc; }
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #505050;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.qty-input:focus, .input-group input:focus, .input-group textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+.order-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.order-btn:active { background-color: #1ebe57; }
+
+/* 6. Footer Section */
+footer {
+    background-color: #111;
+    padding: 35px 20px;
+    text-align: center;
+    border-top: 2px solid #222;
+    color: #888;
+    font-size: 13px;
+}
+
+footer h3 { color: #ff6600; margin-bottom: 8px; }
+
+/* Responsive Grid for bigger screens */
+@media (min-width: 650px) {
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .hero-section {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        gap: 50px;
+        padding: 60px 40px;
+    }
+    .banner-svg { max-width: 380px; margin-top: 0; }
+}
